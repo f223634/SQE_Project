@@ -1,0 +1,25 @@
+{
+  "name": "sqe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "allure:generate": "npx allure generate allure-report --clean",
+    "allure:open": "npx allure open",
+    "test:report": "npm test && npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "@cucumber/cucumber": "^11.0.1",
+    "allure-codeceptjs": "^3.0.5",
+    "codeceptjs": "^3.6.7",
+    "cucumber": "^6.0.7",
+    "exceljs": "^4.4.0",
+    "playwright": "^1.48.1",
+    "webdriverio": "^9.2.1"
+  }
+}
